@@ -23,3 +23,13 @@
   border-radius: 20px;
 }
 
+.Todo-app h2 {
+  font-size: 28px;
+  margin-right: 10px;
+}
+
+
+.title .calender {
+  width: 30px;
+  height: 30px;
+}
