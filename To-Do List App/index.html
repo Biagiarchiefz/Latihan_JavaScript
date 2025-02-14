@@ -7,6 +7,7 @@
   <title>To-Do List App</title>
 </head>
 <body>
+
     <div class="container">
       <div class="Todo-app">
 
@@ -16,17 +17,27 @@
         </div>
 
         <div class="row">
-          <input type="text"><button>add</button>
+          <input id="input" type="text" placeholder="Add your text">
+          <button onclick="addTask()">add</button>
         </div>
 
-        <div class="">
-          
-        </div>
+       <ul id="list-container">
+
+        <!-- <li class="check">Task 1</li>
+        <li>Task 2</li>
+        <li>Task 3</li> -->
+
+       </ul>
+
       </div>
       
     </div>
 
-  
+ 
+
+    <script src="script.js"></script>
+
+    <!-- icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
       lucide.createIcons();
