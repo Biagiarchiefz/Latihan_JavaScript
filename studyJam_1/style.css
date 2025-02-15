@@ -1,0 +1,20 @@
+/* * {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+} */
+
+
+#kotak {
+  width: 100px;
+  height: 100px;
+  /* background: blue;   */
+  border: 1px solid black;
+  
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
