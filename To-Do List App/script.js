@@ -41,7 +41,7 @@ function saveData() {
 }
 
 function simpan(){
-  listContainer.innerHTML = localStorage.getItem("data")
+  listContainer.innerHTML = localStorage.getItem("data");
 }
 
 simpan();
