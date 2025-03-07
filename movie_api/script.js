@@ -1,13 +1,14 @@
 const search = document.getElementById("search-btn");
 
+
 // console.log(search);
 
-function getUrl() {
-  return `http://www.omdbapi.com/?apikey=dca61bcc&s=harry%20potter`;
+function getUrl(keyword) {
+  return `http://www.omdbapi.com/?apikey=dca61bcc&s=${keyword}`;
 }
 
-function getData() {
-  const url = getUrl();
+function getData(input) {
+  const url = getUrl(input);
   return fetch(url, {
     method: "GET",
   })
@@ -27,16 +28,21 @@ function getData() {
         movieList.appendChild(li);
       });
     })
+
     // .catch((error) => console.error("Error fetching data:", error));
     .catch(function(error) {
       const movieList = document.getElementById("movie-list");
       const h1 = document.createElement("h1")
       h1.textContent = `movies not found biagi ${error}`
       movieList.appendChild(h1)
+
     })
 }
 
 search.addEventListener("click", function () {
-  getData()
+
+  const input = document.getElementById("search-input").value;
+
+  getData(input)
   .then(() => console.log("Data berhasil diambil"));  // jika data berhasil di ambil baru jalankan console.log
 });
