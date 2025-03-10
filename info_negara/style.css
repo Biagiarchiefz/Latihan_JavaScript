@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 
 }
 
@@ -11,7 +12,7 @@ body {
 }
 
 .container{
-  background-color: white;
+  background-color: #f2f2f2;
   padding: 50px 50px;
   position: absolute;
   width: 80vw;  /*view window( VW )*/
@@ -43,5 +44,27 @@ body {
   color: white;
   font-weight: bold;
   border: none;
+}
+
+.container .bendera {
+  display: block;
+  width: 200px;
+  margin: 1.8em auto 1.2em;
+  /* min-width: 50px; */
+} 
+
+.container h2 {
+  margin-top: 5px;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 2px;
+}
+
+.container .data-wrapper {
+  margin-bottom: 5px;
+}
+
+.container .wrapper .data-wrapper h4 {
+  display: inline;
 }
 
